@@ -11,7 +11,9 @@
 <body>
     
     <div id="app">
-        <ol>
+        <button @click="generateEmails">Genera E-mail</button>
+        <div v-if="emails.length !== 10 && emails.length !== 0">Generazione in corso...</div>
+        <ol v-else>
             <li v-for="email in emails"> {{ email }} </li>
         </ol>
     </div>
