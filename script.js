@@ -23,6 +23,6 @@ createApp({
                     this.emails.push(resp.data.response)
                 });
             }
-        }
+        },
     }
 }).mount("#app");
